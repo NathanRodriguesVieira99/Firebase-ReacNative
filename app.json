@@ -3,24 +3,17 @@
     "name": "RNFirebase",
     "slug": "RNFirebase",
     "version": "1.0.0",
-
     "newArchEnabled": true,
-
     "web": {
       "favicon": "./assets/favicon.png"
     },
-
     "experiments": {
       "tsconfigPaths": true
     },
-
-    "plugins": [],
-
+    "plugins": ["expo-build-properties"],
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-
     "userInterfaceStyle": "automatic",
-
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -34,7 +27,9 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.RNFirebase",
+      "googleServicesFile": ""
     }
   }
 }
