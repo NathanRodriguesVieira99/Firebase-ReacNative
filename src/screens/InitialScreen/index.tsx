@@ -53,6 +53,11 @@ export default function InitialScreen() {
             return;
         }
 
+        if (password.length < 6) {
+            Alert.alert('Senha com no mínimo 6 dígitos');
+            return;
+        }
+
         const auth = getAuth();
         await signInWithEmailAndPassword(auth, email, password)
             .then(() => {
