@@ -38,7 +38,9 @@ export default function InitialScreen() {
                 setPassword('');
             })
             .catch((error) => {
-                Alert.alert(error);
+                if (error.code === 'auth/email-already-in-use') {
+                    Alert.alert('Email já em uso');
+                }
             });
     };
 
